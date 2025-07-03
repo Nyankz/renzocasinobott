@@ -2,7 +2,7 @@ from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 from database import get_user_balance, get_user_transactions, get_user
-from config import CRYPTO_ADDRESSES, MIN_WITHDRAWAL, WITHDRAWAL_FEE
+from config import MIN_WITHDRAWAL, WITHDRAWAL_FEE
 
 router = Router()
 
