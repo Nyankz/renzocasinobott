@@ -65,9 +65,11 @@ async def show_deposit_invoice(callback: CallbackQuery):
     currency = callback.data.split("_")[1]
     user_id = callback.from_user.id
 
-    invoice = await create_invoice(user_id, currency)
-if not invoice or "pay_url" not in invoice:
-    await callback.answer("Ошибка при создании чека!", show_alert=True)
+    invoice = await 
+create_invoice(user_id, currency)
+    if not invoice or "pay_url" not in invoice:
+    await 
+        callback.answer("Ошибка при создании чека!", show_alert=True)
     return
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
